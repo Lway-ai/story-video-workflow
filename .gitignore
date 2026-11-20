@@ -1,0 +1,47 @@
+# 生成物：视频、图片、音频、字幕成品（只留模板和脚本进仓库）
+*.mp4
+*.mov
+*.mkv
+*.webm
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.gif
+*.wav
+*.mp3
+*.aac
+*.flac
+*.srt
+*.ass
+
+# 例外：模板目录里的示例文件可以进仓库（上面已被 *.srt 排除，如需保留请 force add）
+!templates/*.csv
+!templates/*.txt
+!templates/*.md
+
+# 日志与中间产物
+*.log
+*.txt.bak
+loudnorm-*.txt
+concat-*.txt
+final-shot-map-*.txt
+segments-*/
+narration-*/
+frames-*/
+
+# 密钥与本地配置
+.env
+.env.*
+*.key
+*.pem
+credentials*.json
+secrets*.json
+
+# 系统与编辑器
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+__pycache__/
+*.pyc
